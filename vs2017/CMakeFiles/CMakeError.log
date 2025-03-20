@@ -1,0 +1,706 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-77d8ce
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_3598e.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3598e.dir\Debug\\" /Fd"cmTC_3598e.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-77d8ce\src.c"
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-77d8ce\src.c(1): fatal error C1083: 无法打开包括文件: “pthread.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-77d8ce\cmTC_3598e.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-kjimuz
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_478cb.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_478cb.dir\Debug\\" /Fd"cmTC_478cb.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-kjimuz\CheckFunctionExists.c"
+  
+LINK : fatal error LNK1104: 无法打开文件“pthreads.lib” [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-kjimuz\cmTC_478cb.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-qoavco
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_fcbf0.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fcbf0.dir\Debug\\" /Fd"cmTC_fcbf0.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-qoavco\CheckFunctionExists.c"
+  
+LINK : fatal error LNK1104: 无法打开文件“pthread.lib” [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-qoavco\cmTC_fcbf0.vcxproj]
+
+
+
+Determining if the include file dirent.h exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-zecyuz
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_c7004.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c7004.dir\Debug\\" /Fd"cmTC_c7004.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-zecyuz\CheckIncludeFile.c"
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-zecyuz\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “dirent.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-zecyuz\cmTC_c7004.vcxproj]
+
+
+
+Determining if the include file endian.h exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-h9u19f
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_759bd.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_759bd.dir\Debug\\" /Fd"cmTC_759bd.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-h9u19f\CheckIncludeFile.c"
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-h9u19f\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “endian.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-h9u19f\cmTC_759bd.vcxproj]
+
+
+
+Determining if the include file netinet/in.h exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-jj2wu4
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_b1205.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b1205.dir\Debug\\" /Fd"cmTC_b1205.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-jj2wu4\CheckIncludeFile.c"
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-jj2wu4\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “netinet/in.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-jj2wu4\cmTC_b1205.vcxproj]
+
+
+
+Determining if the include file sys/endian.h exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-975uzj
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_c7b05.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c7b05.dir\Debug\\" /Fd"cmTC_c7b05.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-975uzj\CheckIncludeFile.c"
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-975uzj\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “sys/endian.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-975uzj\cmTC_c7b05.vcxproj]
+  
+
+
+
+Determining if the include file sys/socket.h exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-wtjuhl
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_dc6f3.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dc6f3.dir\Debug\\" /Fd"cmTC_dc6f3.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-wtjuhl\CheckIncludeFile.c"
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-wtjuhl\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “sys/socket.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-wtjuhl\cmTC_dc6f3.vcxproj]
+  
+
+
+
+Determining if the include file sys/time.h exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-tux4k8
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_f1cf9.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f1cf9.dir\Debug\\" /Fd"cmTC_f1cf9.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-tux4k8\CheckIncludeFile.c"
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-tux4k8\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “sys/time.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-tux4k8\cmTC_f1cf9.vcxproj]
+
+
+
+Determining if the include file sys/wait.h exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-lc3ys6
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_9409c.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9409c.dir\Debug\\" /Fd"cmTC_9409c.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-lc3ys6\CheckIncludeFile.c"
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-lc3ys6\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “sys/wait.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-lc3ys6\cmTC_9409c.vcxproj]
+  
+
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-1m5jnl
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_98dcd.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_98dcd.dir\Debug\\" /Fd"cmTC_98dcd.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-1m5jnl\CheckIncludeFile.c"
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-1m5jnl\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-1m5jnl\cmTC_98dcd.vcxproj]
+
+
+
+Determining if the include file sys/resource.h exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-nz7pjy
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_e7b54.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e7b54.dir\Debug\\" /Fd"cmTC_e7b54.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-nz7pjy\CheckIncludeFile.c"
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-nz7pjy\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “sys/resource.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-nz7pjy\cmTC_e7b54.vcxproj]
+
+
+
+Determining if the include file vfork.h exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-wzstep
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_603b8.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_603b8.dir\Debug\\" /Fd"cmTC_603b8.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-wzstep\CheckIncludeFile.c"
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-wzstep\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “vfork.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-wzstep\cmTC_603b8.vcxproj]
+
+
+
+Determining if the include file arpa/inet.h exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-ehix5x
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_007f5.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_007f5.dir\Debug\\" /Fd"cmTC_007f5.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ehix5x\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ehix5x\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “arpa/inet.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ehix5x\cmTC_007f5.vcxproj]
+
+
+
+Determining if the function gettimeofday exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-pzgxhs
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_a92aa.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=gettimeofday /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a92aa.dir\Debug\\" /Fd"cmTC_a92aa.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-pzgxhs\CheckFunctionExists.c"
+  
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _gettimeofday，该符号在函数 _main 中被引用 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-pzgxhs\cmTC_a92aa.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-pzgxhs\Debug\cmTC_a92aa.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-pzgxhs\cmTC_a92aa.vcxproj]
+
+
+
+Determining if the function vfork exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-y37nrf
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_48e36.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=vfork /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_48e36.dir\Debug\\" /Fd"cmTC_48e36.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-y37nrf\CheckFunctionExists.c"
+  
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _vfork，该符号在函数 _main 中被引用 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-y37nrf\cmTC_48e36.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-y37nrf\Debug\cmTC_48e36.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-y37nrf\cmTC_48e36.vcxproj]
+
+
+
+Determining if the function vprintf exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-6d5ymr
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_6aaec.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=vprintf /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6aaec.dir\Debug\\" /Fd"cmTC_6aaec.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-6d5ymr\CheckFunctionExists.c"
+  
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _vprintf，该符号在函数 _main 中被引用 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-6d5ymr\cmTC_6aaec.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-6d5ymr\Debug\cmTC_6aaec.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-6d5ymr\cmTC_6aaec.vcxproj]
+
+
+
+Determining if the function mmap exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-xb02p9
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_a6b28.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=mmap /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a6b28.dir\Debug\\" /Fd"cmTC_a6b28.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xb02p9\CheckFunctionExists.c"
+  
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _mmap，该符号在函数 _main 中被引用 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xb02p9\cmTC_a6b28.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xb02p9\Debug\cmTC_a6b28.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xb02p9\cmTC_a6b28.vcxproj]
+
+
+
+Determining if the function fork exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-2637zj
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_729a4.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fork /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_729a4.dir\Debug\\" /Fd"cmTC_729a4.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-2637zj\CheckFunctionExists.c"
+  
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _fork，该符号在函数 _main 中被引用 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-2637zj\cmTC_729a4.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-2637zj\Debug\cmTC_729a4.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-2637zj\cmTC_729a4.vcxproj]
+
+
+
+Determining if the function gethostbyname exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-jy1fhn
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_d4915.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=gethostbyname /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d4915.dir\Debug\\" /Fd"cmTC_d4915.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-jy1fhn\CheckFunctionExists.c"
+  
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _gethostbyname，该符号在函数 _main 中被引用 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-jy1fhn\cmTC_d4915.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-jy1fhn\Debug\cmTC_d4915.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-jy1fhn\cmTC_d4915.vcxproj]
+
+
+
+Determining if the function gethostname exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-nz2joc
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_b3f87.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=gethostname /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b3f87.dir\Debug\\" /Fd"cmTC_b3f87.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-nz2joc\CheckFunctionExists.c"
+  
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _gethostname，该符号在函数 _main 中被引用 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-nz2joc\cmTC_b3f87.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-nz2joc\Debug\cmTC_b3f87.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-nz2joc\cmTC_b3f87.vcxproj]
+
+
+
+Determining if the function inet_ntoa exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-60af5a
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_106f1.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=inet_ntoa /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_106f1.dir\Debug\\" /Fd"cmTC_106f1.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-60af5a\CheckFunctionExists.c"
+  
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _inet_ntoa，该符号在函数 _main 中被引用 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-60af5a\cmTC_106f1.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-60af5a\Debug\cmTC_106f1.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-60af5a\cmTC_106f1.vcxproj]
+
+
+
+Determining if the function mkfifo exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-tix61q
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_ef16c.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=mkfifo /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ef16c.dir\Debug\\" /Fd"cmTC_ef16c.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-tix61q\CheckFunctionExists.c"
+  
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _mkfifo，该符号在函数 _main 中被引用 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-tix61q\cmTC_ef16c.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-tix61q\Debug\cmTC_ef16c.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-tix61q\cmTC_ef16c.vcxproj]
+
+
+
+Determining if the function select exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-7kvq75
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_8cb9d.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=select /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8cb9d.dir\Debug\\" /Fd"cmTC_8cb9d.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-7kvq75\CheckFunctionExists.c"
+  
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _select，该符号在函数 _main 中被引用 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-7kvq75\cmTC_8cb9d.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-7kvq75\Debug\cmTC_8cb9d.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-7kvq75\cmTC_8cb9d.vcxproj]
+
+
+
+Determining if the function socket exists failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-9x8uo3
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_6ba11.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=socket /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6ba11.dir\Debug\\" /Fd"cmTC_6ba11.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-9x8uo3\CheckFunctionExists.c"
+  
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _socket，该符号在函数 _main 中被引用 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-9x8uo3\cmTC_6ba11.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-9x8uo3\Debug\cmTC_6ba11.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-9x8uo3\cmTC_6ba11.vcxproj]
+
+
+
+Determining if the htobe64 exist failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-idz4l9
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_f5712.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f5712.dir\Debug\\" /Fd"cmTC_f5712.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-idz4l9\CheckSymbolExists.c"
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-idz4l9\CheckSymbolExists.c(2): fatal error C1083: 无法打开包括文件: “endian.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-idz4l9\cmTC_f5712.vcxproj]
+
+
+File CheckSymbolExists.c:
+/* */
+#include <endian.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef htobe64
+  return ((int*)(&htobe64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the OSSwapHostToBigInt64 exist failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-0blxh0
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_0d47b.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckSymbolExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0d47b.dir\Debug\\" /Fd"cmTC_0d47b.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-0blxh0\CheckSymbolExists.c"
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-0blxh0\CheckSymbolExists.c(2): fatal error C1083: 无法打开包括文件: “libkern/OSByteOrder.h”: No such file or directory [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-0blxh0\cmTC_0d47b.vcxproj]
+  
+
+
+File CheckSymbolExists.c:
+/* */
+#include <libkern/OSByteOrder.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef OSSwapHostToBigInt64
+  return ((int*)(&OSSwapHostToBigInt64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining size of pid_t failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-c0shdo
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_4024a.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  LIBVNCSERVER_PID_T.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4024a.dir\Debug\\" /Fd"cmTC_4024a.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-c0shdo\LIBVNCSERVER_PID_T.c"
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-c0shdo\LIBVNCSERVER_PID_T.c(29): error C2065: “pid_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-c0shdo\cmTC_4024a.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-c0shdo\LIBVNCSERVER_PID_T.c(30): error C2065: “pid_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-c0shdo\cmTC_4024a.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-c0shdo\LIBVNCSERVER_PID_T.c(31): error C2065: “pid_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-c0shdo\cmTC_4024a.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-c0shdo\LIBVNCSERVER_PID_T.c(32): error C2065: “pid_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-c0shdo\cmTC_4024a.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-c0shdo\LIBVNCSERVER_PID_T.c(33): error C2065: “pid_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-c0shdo\cmTC_4024a.vcxproj]
+
+
+LIBVNCSERVER_PID_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(pid_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of socklen_t failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-xoi6xv
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_8d328.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  LIBVNCSERVER_SOCKLEN_T.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8d328.dir\Debug\\" /Fd"cmTC_8d328.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xoi6xv\LIBVNCSERVER_SOCKLEN_T.c"
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xoi6xv\LIBVNCSERVER_SOCKLEN_T.c(29): error C2065: “socklen_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xoi6xv\cmTC_8d328.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xoi6xv\LIBVNCSERVER_SOCKLEN_T.c(30): error C2065: “socklen_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xoi6xv\cmTC_8d328.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xoi6xv\LIBVNCSERVER_SOCKLEN_T.c(31): error C2065: “socklen_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xoi6xv\cmTC_8d328.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xoi6xv\LIBVNCSERVER_SOCKLEN_T.c(32): error C2065: “socklen_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xoi6xv\cmTC_8d328.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xoi6xv\LIBVNCSERVER_SOCKLEN_T.c(33): error C2065: “socklen_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-xoi6xv\cmTC_8d328.vcxproj]
+
+
+LIBVNCSERVER_SOCKLEN_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(socklen_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of in_addr_t failed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-ogjeew
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_2ded1.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  LIBVNCSERVER_IN_ADDR_T.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2ded1.dir\Debug\\" /Fd"cmTC_2ded1.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ogjeew\LIBVNCSERVER_IN_ADDR_T.c"
+  
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ogjeew\LIBVNCSERVER_IN_ADDR_T.c(29): error C2065: “in_addr_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ogjeew\cmTC_2ded1.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ogjeew\LIBVNCSERVER_IN_ADDR_T.c(30): error C2065: “in_addr_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ogjeew\cmTC_2ded1.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ogjeew\LIBVNCSERVER_IN_ADDR_T.c(31): error C2065: “in_addr_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ogjeew\cmTC_2ded1.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ogjeew\LIBVNCSERVER_IN_ADDR_T.c(32): error C2065: “in_addr_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ogjeew\cmTC_2ded1.vcxproj]
+E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ogjeew\LIBVNCSERVER_IN_ADDR_T.c(33): error C2065: “in_addr_t”: 未声明的标识符 [E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ogjeew\cmTC_2ded1.vcxproj]
+
+
+LIBVNCSERVER_IN_ADDR_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(in_addr_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+

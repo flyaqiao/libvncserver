@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\rfbserver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\rfbregion.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\auth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\sockets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\stats.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\corre.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\hextile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\rre.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\translate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\cutpaste.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\httpd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\cursor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\font.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\selbox.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\common\vncauth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\common\sockets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\cargs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\ultra.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\scale.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\common\crypto_included.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\common\sha1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\common\d3des.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\libvncserver\rfbssl_none.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Works\ThirdParty\libvncserver\src\common\minilzo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Works\ThirdParty\libvncserver\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0A0A30DB-566C-34B4-8791-8A681822F4F2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

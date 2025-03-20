@@ -8,3 +8,7 @@ doc/html/
 .cachexs
 .log
 compile_commands.json
+Debug/
+Win32/
+.vs/
+*.stamp

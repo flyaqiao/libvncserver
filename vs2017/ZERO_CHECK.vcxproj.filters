@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\808dda84e4d1612b6eef0315aef1a77a\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{159724E4-49D9-3DCF-A273-8A16D5F71916}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

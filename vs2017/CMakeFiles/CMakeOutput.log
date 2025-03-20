@@ -1,0 +1,318 @@
+The system is: Windows - 10.0.19045 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2025/3/20 12:14:39。
+节点 1 上的项目“E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\3.25.1\CompilerIdC\CompilerIdC.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“Debug\”。
+  正在创建目录“Debug\CompilerIdC.tlog\”。
+InitializeBuildStatus:
+  正在创建“Debug\CompilerIdC.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\3.25.1\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  正在删除文件“Debug\CompilerIdC.tlog\unsuccessfulbuild”。
+  正在对“Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate”执行 Touch 任务。
+已完成生成项目“E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\3.25.1\CompilerIdC\CompilerIdC.vcxproj”(默认目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:02.47
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/3.25.1/CompilerIdC/CompilerIdC.exe"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-3oj148
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_5d3e4.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CMakeCCompilerABI.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5d3e4.dir\Debug\\" /Fd"cmTC_5d3e4.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c"
+  
+  cmTC_5d3e4.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-3oj148\Debug\cmTC_5d3e4.exe
+
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-rfr7zc
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_6e17e.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6e17e.dir\Debug\\" /Fd"cmTC_6e17e.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-rfr7zc\CheckIncludeFile.c"
+  
+  cmTC_6e17e.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-rfr7zc\Debug\cmTC_6e17e.exe
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-6mgscn
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_56992.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56992.dir\Debug\\" /Fd"cmTC_56992.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-6mgscn\CheckIncludeFile.c"
+  
+  cmTC_56992.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-6mgscn\Debug\cmTC_56992.exe
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-zs7byh
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_90c7d.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_90c7d.dir\Debug\\" /Fd"cmTC_90c7d.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-zs7byh\CheckIncludeFile.c"
+  
+  cmTC_90c7d.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-zs7byh\Debug\cmTC_90c7d.exe
+
+
+
+Determining if the include file ws2tcpip.h exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-dwdi9w
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_30c62.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_30c62.dir\Debug\\" /Fd"cmTC_30c62.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-dwdi9w\CheckIncludeFile.c"
+  
+  cmTC_30c62.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-dwdi9w\Debug\cmTC_30c62.exe
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-1u95we
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_38c75.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_38c75.dir\Debug\\" /Fd"cmTC_38c75.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-1u95we\CheckIncludeFile.c"
+  
+  cmTC_38c75.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-1u95we\Debug\cmTC_38c75.exe
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-4ofjr2
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_cc818.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cc818.dir\Debug\\" /Fd"cmTC_cc818.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-4ofjr2\CheckIncludeFile.c"
+  
+  cmTC_cc818.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-4ofjr2\Debug\cmTC_cc818.exe
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-8k4t6z
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_ee058.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckIncludeFile.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ee058.dir\Debug\\" /Fd"cmTC_ee058.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-8k4t6z\CheckIncludeFile.c"
+  
+  cmTC_ee058.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-8k4t6z\Debug\cmTC_ee058.exe
+
+
+
+Determining if the function ftime exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-ot5x6e
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_9d071.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=ftime /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9d071.dir\Debug\\" /Fd"cmTC_9d071.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ot5x6e\CheckFunctionExists.c"
+  
+  cmTC_9d071.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-ot5x6e\Debug\cmTC_9d071.exe
+
+
+
+Determining if the function memmove exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-zagd2f
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_f5eaa.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=memmove /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f5eaa.dir\Debug\\" /Fd"cmTC_f5eaa.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-zagd2f\CheckFunctionExists.c"
+  
+  cmTC_f5eaa.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-zagd2f\Debug\cmTC_f5eaa.exe
+
+
+
+Determining if the function memset exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-lnyabg
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_c2c4f.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=memset /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c2c4f.dir\Debug\\" /Fd"cmTC_c2c4f.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-lnyabg\CheckFunctionExists.c"
+  
+  cmTC_c2c4f.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-lnyabg\Debug\cmTC_c2c4f.exe
+
+
+
+Determining if the function strchr exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-mshkf4
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_57725.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strchr /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_57725.dir\Debug\\" /Fd"cmTC_57725.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-mshkf4\CheckFunctionExists.c"
+  
+  cmTC_57725.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-mshkf4\Debug\cmTC_57725.exe
+
+
+
+Determining if the function strcspn exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-f4179o
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_988c3.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strcspn /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_988c3.dir\Debug\\" /Fd"cmTC_988c3.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-f4179o\CheckFunctionExists.c"
+  
+  cmTC_988c3.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-f4179o\Debug\cmTC_988c3.exe
+
+
+
+Determining if the function strdup exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-hg1q95
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_29593.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strdup /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_29593.dir\Debug\\" /Fd"cmTC_29593.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-hg1q95\CheckFunctionExists.c"
+  
+  cmTC_29593.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-hg1q95\Debug\cmTC_29593.exe
+
+
+
+Determining if the function strerror exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-zs6k23
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_c03bc.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strerror /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c03bc.dir\Debug\\" /Fd"cmTC_c03bc.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-zs6k23\CheckFunctionExists.c"
+  
+  cmTC_c03bc.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-zs6k23\Debug\cmTC_c03bc.exe
+
+
+
+Determining if the function strstr exists passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-rp87yr
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_c3527.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strstr /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c3527.dir\Debug\\" /Fd"cmTC_c3527.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-rp87yr\CheckFunctionExists.c"
+  
+  cmTC_c3527.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-rp87yr\Debug\cmTC_c3527.exe
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: E:/Works/ThirdParty/libvncserver/vs2017/CMakeFiles/CMakeScratch/TryCompile-r56u0e
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_9838a.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=15.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 15.9.21+g9802d43bc3
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.16.27048 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  LIBVNCSERVER_SIZE_T.c
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9838a.dir\Debug\\" /Fd"cmTC_9838a.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-r56u0e\LIBVNCSERVER_SIZE_T.c"
+  
+  cmTC_9838a.vcxproj -> E:\Works\ThirdParty\libvncserver\vs2017\CMakeFiles\CMakeScratch\TryCompile-r56u0e\Debug\cmTC_9838a.exe
+
+
+
